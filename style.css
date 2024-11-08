@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;}
+
+body {
+    background: linear-gradient(45deg, #f0f4f8, #e1e6f0);
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+nav {
+    background-color: #222;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+section {
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+section a:hover {
+    background-color: #ff6f61;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.t-e {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.t-e:hover {
+    transform: translateY(-12px);
+    background-color: #ff6f61;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.t-e span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+section a[href^="https://github.com/"] {
+    color:#B8001F;
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+section a[href^="https://github.com/"]:hover {
+    color:#B8001F;
+    ;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    section {
+        padding: 30px;
+        margin: 50px 15px;
+    }
+
+    .t-e {
+        width: 140px;
+        padding: 20px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
